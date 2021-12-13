@@ -1,11 +1,8 @@
-FROM node:14
-
-WORKDIR /usr/src/app
-
-COPY package.json .
-RUN npm install 
+FROM node:12.18-alpine
+ENV NODE_ENV=production
+ENV PORT=5000
+WORKDIR /app
 COPY . .
-
-EXPOSE 80
-
-CMD ["node", "index.js"]
+RUN npm install --silent
+EXPOSE 5000
+CMD ["npm", "start"]
