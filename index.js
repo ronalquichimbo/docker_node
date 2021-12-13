@@ -4,7 +4,7 @@ const port = process.env.PORT || 3000;
 const config = require('config')
 
 app.get('/', (req, res)=>{
-    res.send('CI /CD Devops tesis, Tesis Bienvenidad a mi aplicación Ing. Karla well !')
+    res.send('CI /CD Devops , Tesis Bienvenidad a mi aplicación Ing. Karla well !')
 })
 
 app.get('/status', (req, Sres)=>{
